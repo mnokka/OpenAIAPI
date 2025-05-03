@@ -1,0 +1,41 @@
+PI OK, response:
+Sure, below you will find an example of a Hello World application implemented in Qt5 with C++. The program will have a simple user interface with a menu, and an info section which includes the name of the programmer.
+
+```cpp
+#include <QApplication>
+#include <QMenuBar>
+#include <QMessageBox>
+#include <QMainWindow>
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow()
+    {
+        QMenu* fileMenu = menuBar()->addMenu("&Info");
+
+        QAction* showInfoAction = fileMenu->addAction("&Show Info");
+        connect(showInfoAction, &QAction::triggered, this, &MainWindow::showInfo);
+    }
+
+public slots:
+    void showInfo()
+    {
+        QMessageBox::information(this, "Info", "This program is written by Urho Kalevala");
+    }
+};
+
+int main(int argc, char **argv)
+{
+    QApplication app(argc, argv);
+
+    MainWindow win;
+    win.show();
+    
+    return app.exec();
+}
+```
+
+This program creates a main window with a menu. In the menu, there is an "Info" section. When this option is selected, a message box pops up showing an information message stating the programmer's name. This program uses Qt's signal and slot mechanism to respond to the user's interaction. This is a basic example and can be expanded for more complex applications.

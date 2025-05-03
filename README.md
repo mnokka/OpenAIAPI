@@ -1,7 +1,8 @@
-# OpenAIAPI
-Check created OpenAI APi functionality
+# OpenAIAPI usages
 
--Create OpenAI API in https://openai.com/ (account creation and 5$ minimum payment needed)
+## Check created OpenAI APi functionality
+
+-Create OpenAI API in https://openai.com/ (*account creation and 5$ minimum payment needed*)
 
 -Create .env file with content
 
@@ -19,3 +20,14 @@ Check created OpenAI APi functionality
 API OK, response:
 
 Pong. Assistant online and ready to assist.
+
+--------------------------------------------------------------------------------------
+
+
+
+
+Qt C++ HelloWorld
+
+Asks gpt-4 to create Qt C++ UI HelloWorld
+
+[Response example](QtHelloWorldResponse.txt)
