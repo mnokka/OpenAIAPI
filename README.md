@@ -21,13 +21,19 @@ API OK, response:
 
 Pong. Assistant online and ready to assist.
 
---------------------------------------------------------------------------------------
+
+---
 
 
-
-
-Qt C++ HelloWorld
-
+## Qt C++ HelloWorld 
 Asks gpt-4 to create Qt C++ UI HelloWorld
 
 [Response example](QtHelloWorldResponse.txt)
+
+
+---
+
+### Two LLMs are talking 
+Uses 2 different gtp versions whch are talking with each others
+
+[Response example](2LLMTalkingConversation.txt)
